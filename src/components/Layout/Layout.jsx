@@ -1,4 +1,5 @@
-import Nav from "../Nav/nav";
+
+import Nav from "../Nav/Nav";
 import "./Layout.css";
 export default function Layout (props){
   return (
@@ -6,9 +7,15 @@ export default function Layout (props){
       <header>
         <Nav />
       </header>
+      <aside>
+        ASIDE
+      </aside>
       <main>
         {props.children}
       </main>
+      <footer>
+        FOOTER
+      </footer>
     </div>
   );
 }

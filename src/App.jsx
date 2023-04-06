@@ -1,4 +1,5 @@
-import { NavLink, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
 
 export default function App(){
   return (
