@@ -1,0 +1,21 @@
+.Layout{
+  max-width: 789px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Layout header {
+  flex-basis: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+} 
+.Layout aside {
+  flex: 20% 0 0;
+}
+.Layout main {
+  flex: 80% 0 0;
+}
+.Layout footer {
+  flex: 100% 0 0;
+}
