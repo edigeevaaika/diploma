@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contacts from "./pages/Contacts";
-import Delivery from "./pages/Delivery";
-import Category from "./pages/category";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Contacts from "./Pages/Contacts";
+import Delivery from "./Pages/Delivery";
+import Category from "./Pages/Сategory";
 
 
 export default function App() {
