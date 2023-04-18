@@ -7,14 +7,15 @@ import Delivery from "./Pages/Delivery";
 import Category from "./Pages/Сategory";
 import { createContext, useEffect, useState } from "react";
 import { getDoc, getDocs } from "firebase/firestore";
-import { categoryCollection } from "./Firebase";
+import { categoryCollection, productsCollection } from "./Firebase";
 
 export const AppContext = createContext({
-  categories: []
+  categories: [],
 });
 
 export default function App() {
-  const [categories,setCategories] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [products, setProducts] = useState([]);
   useEffect(() => {
     // получить категории из списка категорий
     getDocs(categoryCollection).then((snapshot) => {
@@ -32,19 +33,35 @@ export default function App() {
       // задать новый массив как состояние компонента
       setCategories(newCategories);
     });
+
+    getDocs(productsCollection).then((snapshot) => {
+      // категории будут храниться в snapshop.docs
+      const newProducts = [];
+      // coздать массив для категорий
+      snapshot.docs.forEach((doc) => {
+        //doc = категория
+        // заполнить массив данными из списка категорий
+        const product = doc.data();
+        product.id = doc.id;
+
+        newProducts.push(product);
+      });
+      // задать новый массив как состояние компонента
+      setProducts(newProducts);
+    });
   }, []);
   return (
     <div className="App">
-      <AppContext.Provider value={{categories}}>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="/delivery" element={<Delivery />} />
-          <Route path="/category/:path" element={<Category/>} />
-        </Routes>
-      </Layout>
+      <AppContext.Provider value={{ categories, products }}>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/delivery" element={<Delivery />} />
+            <Route path="/category/:path" element={<Category />} />
+          </Routes>
+        </Layout>
       </AppContext.Provider>
     </div>
   );
