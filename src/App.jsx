@@ -8,14 +8,22 @@ import Category from "./Pages/Сategory";
 import { createContext, useEffect, useState } from "react";
 import { getDoc, getDocs } from "firebase/firestore";
 import { categoryCollection, productsCollection } from "./Firebase";
+import Cart from "./Pages/Cart";
 
 export const AppContext = createContext({
   categories: [],
+  products:[],
+
+  //корзина
+  cart:{},
+  setCart:{},
 });
 
 export default function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
+  //корзина
+  const [cart,setCart] = useState({});
   useEffect(() => {
     // получить категории из списка категорий
     getDocs(categoryCollection).then((snapshot) => {
@@ -52,7 +60,7 @@ export default function App() {
   }, []);
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products }}>
+      <AppContext.Provider value={{ categories, products, cart,setCart }}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -60,6 +68,7 @@ export default function App() {
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/category/:path" element={<Category />} />
+            <Route path="/cart" element={<Cart/>}/>
           </Routes>
         </Layout>
       </AppContext.Provider>
