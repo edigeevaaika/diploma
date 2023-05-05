@@ -24,7 +24,7 @@ export default function CartList() {
   const output = products
     .filter((product) => productIds.includes(product.id))
     .map((product) => (
-      <div className="CartItem">
+      <div className="CartItem" key={product.id}>
         <img src={product.picture} alt={product.name} />
         <Link to={"/product/" + product.slug}>{product.name}</Link>
         <input
