@@ -91,7 +91,7 @@ export default function App() {
     onOrdersLoad(setOrders);
     onAuthChange((user) => {
       if (user) {
-        user.isAdmin = user.email === "zumakadyrovanagima@gmail.com";
+        user.isAdmin = user.email === 'umarakmatov688@gmail.com';
       }
       setUser(user);
     });
@@ -114,7 +114,7 @@ export default function App() {
             <Route path="*" element={<NotFound />} />
 
             <Route path="/cart" element={<Cart />} />
-            <Route path="/orders" element={<Orders />} />
+            <Route path="/orders" element={<orders />} />
           </Routes>
         </Layout>
       </AppContext.Provider>
