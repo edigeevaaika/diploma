@@ -4,25 +4,37 @@ import "./Layout.css";
 import CategoryList from "../СategoryList/CategoryList";
 import CartLink from "../CartLink/CartLink";
 import Auth from "../Auth/Auth";
+import Drawer from "../Drawer/Drawer";
+import NavToggle from "../NavToggle/NavToggle";
+import { useState } from "react";
+import video from "../../assets/video.mp4"
 
-export default function Layout (props){
+export default function Layout(props) {
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  function toggleDrawer() {
+    setDrawerOpen(!drawerOpen);
+  }
   return (
     <div className="Layout">
       <header>
         <Logo />
         <Nav />
-        <CartLink/>
-        <Auth/>
+        <NavToggle callback={toggleDrawer} />
+        <Drawer open={drawerOpen} toggle={toggleDrawer} />
+        <CartLink />
+        <Auth />
       </header>
       <aside>
-      <CategoryList/>
+        <CategoryList />
       </aside>
       <main>
+        <video width="400" height="300" controls="controls" autoplay="autoplay">
+          <source src={video} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
+        </video >
         {props.children}
       </main>
-      <footer>
-        FOOTER
-      </footer>
+      <footer>FOOTER</footer>
     </div>
   );
 }
