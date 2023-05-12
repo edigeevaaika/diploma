@@ -3,7 +3,7 @@ import Nav from "../Nav/Nav";
 import "./Drawer.css"
 
 function Drawer({ open, toggle }) {
-  const drawerClassNames = Drawer `${open ? "open" : ""}`;
+  const drawerClassNames = `Drawer ${open ? "open" : ""}`;
   
   return (
     <div className={drawerClassNames}> 
@@ -11,9 +11,9 @@ function Drawer({ open, toggle }) {
       <div className="content">
         <Logo />
         <Nav />
-      </div>
+      </div>  
     </div>
   );
 }
 
-export default Drawer;
+export default Drawer; 
