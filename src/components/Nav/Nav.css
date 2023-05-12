@@ -23,3 +23,8 @@
 .Nav ul li:hover{
   color: yellow;
 }
+@media (max-width: 650px) {
+  .Nav ul {
+    flex-direction: column;
+  }
+} 
