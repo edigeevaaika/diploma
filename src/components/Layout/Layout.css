@@ -31,3 +31,6 @@
     display: none;
   }
 } 
+.video, .video video{
+  width: 100%;
+}
