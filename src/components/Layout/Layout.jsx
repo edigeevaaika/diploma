@@ -7,7 +7,7 @@ import Auth from "../Auth/Auth";
 import Drawer from "../Drawer/Drawer";
 import NavToggle from "../NavToggle/NavToggle";
 import { useState } from "react";
-import video from "../../assets/video.mp4"
+import video from "../../assets/video.mp4";
 
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -25,13 +25,19 @@ export default function Layout(props) {
         <CartLink />
         <Auth />
       </header>
+      <div className="video">
+        <video width="400" height="300" controls="controls" autoplay="autoplay">
+          <source
+            src={video}
+            type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+          ></source>
+        </video>
+      </div>
       <aside>
+      
         <CategoryList />
       </aside>
       <main>
-        <video width="400" height="300" controls="controls" autoplay="autoplay">
-          <source src={video} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
-        </video >
         {props.children}
       </main>
       <footer>FOOTER</footer>
