@@ -17,6 +17,7 @@ export default function ProductList({ category }) {
       <Link to={"/product/" + product.path}>
         {product.name}
       </Link>
+      <span>{product.price}</span>
       <AddToCart product={product} />
       <DeleteProduct product={product} />
     </div>
