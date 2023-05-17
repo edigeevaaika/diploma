@@ -17,6 +17,7 @@ import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
 import Product from "./pages/Product";
 import ThankYou from "./pages/ThankYou";
+import AsideList from "./components/AsideList/AsideList";
 
 export const AppContext = createContext({
   categories: [],
@@ -91,7 +92,7 @@ export default function App() {
     onOrdersLoad(setOrders);
     onAuthChange((user) => {
       if (user) {
-        user.isAdmin = user.email === 'edigeeva.aika@mail.ru';
+        user.isAdmin = user.email === 'umarakmatov688@gmail.com';
       }
       setUser(user);
     });
@@ -114,7 +115,8 @@ export default function App() {
             <Route path="*" element={<NotFound />} />
 
             <Route path="/cart" element={<Cart />} />
-            <Route path="/orders" element={<orders/>} />
+            <Route path="/orders/:path" element={<orders/>} />
+            <Route path="/asideList" element={<AsideList/>} />
           </Routes>
         </Layout>
       </AppContext.Provider>
