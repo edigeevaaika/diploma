@@ -1,0 +1,7 @@
+.Logout{
+  display: flex;
+  flex-direction: column;
+}
+.Logout button:hover{
+  background: rgb(0, 145, 255);
+}
