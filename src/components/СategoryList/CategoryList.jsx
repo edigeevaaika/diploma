@@ -11,6 +11,9 @@ export default function CategoryList() {
 
   const output = categories.map((category) => (
     <li key={category.id}>
+      <div className="category_img">
+        <img src={category.picture} alt={category.name} />
+      </div>
       <NavLink to={"/category/" + category.path}>{category.name}</NavLink>
       <DeleteCategory category={category}/>
     </li>
@@ -21,4 +24,5 @@ export default function CategoryList() {
       <AddCategory />
     </div>
   );
-}
+} 
+
