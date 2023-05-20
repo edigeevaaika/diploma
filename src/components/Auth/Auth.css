@@ -5,3 +5,9 @@
 .Logout button:hover{
   background: rgb(0, 145, 255);
 }
+.OrderLink img{
+  height: 50px;
+}
+.Login img {
+  height: 50px;
+}

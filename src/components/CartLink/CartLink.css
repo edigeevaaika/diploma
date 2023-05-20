@@ -1,0 +1,12 @@
+.CartLink .Cart-photo img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+
+}
+.total{
+  position: absolute;
+  margin: -45px 0 100px 40px;
+
+}

@@ -1,5 +1,5 @@
 .Layout {
-  max-width: 789px;
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -8,19 +8,18 @@
   flex-basis: 100%;
   flex-grow: 0;
   flex-shrink: 0;
-  background-color: antiquewhite;
-
   display: flex;
+  height: 120px;
   justify-content: space-between;
   align-items: center;
 }
 .Layout aside {
-  flex: 20% 0 0;
+  flex: 100% 0 0;
   background-color: azure;
 }
 .Layout main {
   flex: 80% 1 1;
-  background-color: rgb(168, 160, 255);
+  background-color: azure;;
 }
 .Layout footer {
   flex: 100% 0 0;
@@ -31,3 +30,6 @@
     display: none;
   }
 } 
+header{
+  padding: 0 10px;
+}

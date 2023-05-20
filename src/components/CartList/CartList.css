@@ -1,8 +1,18 @@
 .CartList {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .CartList .CartItem img {
-  width: 80px;
+  width: 150px;
+}
+.CartItem input {
+  width: 50px;
+}
+.CartItem{
+  margin: 10px;
+}
+.CartItem{
+  width: 150px;
 }

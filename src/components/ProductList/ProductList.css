@@ -6,4 +6,5 @@
   display: inline-flex;
   flex-direction: column;
   max-width: 200px;
+  margin: 35px;
 }

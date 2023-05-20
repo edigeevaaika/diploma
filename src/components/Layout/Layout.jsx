@@ -9,6 +9,7 @@ import NavToggle from "../NavToggle/NavToggle";
 import { useState } from "react";
 import video from "../../assets/video.mp4";
 import AsideList from "../AsideList/AsideList";
+import Footer from "../Footer/Footer";
 
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -33,7 +34,11 @@ export default function Layout(props) {
       <main>
         {props.children}
       </main>
-      <footer>FOOTER</footer>
+      <footer>
+        <Footer />
+      </footer>
+      
+      
     </div>
   );
 }

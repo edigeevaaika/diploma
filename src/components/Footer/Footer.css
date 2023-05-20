@@ -1,0 +1,55 @@
+Footer{
+  margin: 0;
+}
+footer {
+  width: 100%;
+  background-color: rgba(235, 235, 235, 0.416);
+}
+footer .Logo{
+  width: 200px;
+  margin: 10px 0;
+}
+.Footer_link{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.Footer_link .Nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.Footer_link .Nav ul a{
+  margin: 0;
+}
+.Footer_link h3{
+  margin: 20px 0;
+}
+.Footer_link h3{
+  text-align: center;
+}
+.Footer_news{
+  max-width: 300px;
+}
+.Card_image img{
+  width: 70px;
+  margin: 5px;
+}
+.Footer_card_1{
+  display: flex;
+}
+.Footer_bottom{
+  margin: 0;
+  box-shadow: 0 0 8px #7a7e7fee;
+  background-color: rgba(207, 201, 201, 0.53);
+}
+.Footer_bottom ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.Footer_bottom img{
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}

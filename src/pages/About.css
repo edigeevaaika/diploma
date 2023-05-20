@@ -1,0 +1,31 @@
+.about-row{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+.about-row .col-4{
+  text-align: center;
+  width: 30%;
+  border-radius: 20px;
+  border: 10px solid rgba(225, 239, 239, 0.573);
+  height: 350px;
+  padding: 0 10px;
+  opacity: 1;
+  transition-timing-function: ease;
+  transition-duration: .4s;
+  transform: scale(1);
+}
+.about-row .col-4:hover{
+  transform: translate(0) scale(1.2);
+}
+.about-row .col-4 h2{
+  color: rgb(0, 149, 255);
+  margin: 0;
+}
+.about-photo img{
+  height: 100px;
+  position: relative;
+  top: -30px;
+  left: -50px;
+  bottom: -30px;
+}
