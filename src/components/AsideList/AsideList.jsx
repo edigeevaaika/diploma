@@ -7,7 +7,7 @@ export default function AsideList() {
       <video
         width="100%"
         controls="controls"
-        autoplay="autoplay"
+        // autoPlay="autoplay"
         loop="loop"
       >
         <source
