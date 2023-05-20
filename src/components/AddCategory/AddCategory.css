@@ -1,0 +1,7 @@
+.AddCategory button {
+  background-color: #00a0e3;
+} 
+.AddCategory input{
+  outline: none;
+  margin-left: 40px;
+}
