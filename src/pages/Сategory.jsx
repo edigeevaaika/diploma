@@ -21,6 +21,8 @@ export default function Category() {
         return true;
       }
       else {
+
+        
         return false;
       }
     }
