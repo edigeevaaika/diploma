@@ -5,7 +5,7 @@ footer {
   width: 100%;
   background-color: rgba(235, 235, 235, 0.416);
 }
-footer .Logo{
+.Footer_link .Logo img{
   width: 200px;
   margin: 10px 0;
 }
