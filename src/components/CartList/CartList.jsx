@@ -25,7 +25,8 @@ export default function CartList() {
     .filter((product) => productIds.includes(product.id))
     .map((product) => (
       <div className="CartItem" key={product.id}>
-        <img src={product.picture} alt={product.name} />
+        <div className="Card">
+        <img src={product.picture} alt={product.name} className="scale" />
         <Link to={"/product/" + product.slug}>{product.name}</Link>
         <input
           type="number"
@@ -35,6 +36,7 @@ export default function CartList() {
         />
         <span>{product.price * cart[product.id]} som</span>
         <button onClick={() => onRemoveClick(product)}>Remove</button>
+      </div>
       </div>
     ));
 
