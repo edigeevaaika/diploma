@@ -16,10 +16,18 @@ export default function Product() {
 
   return (
     <div className="Product">
+      <div className="Name">
       <h1>{product.name}</h1>
       <img src={product.picture} alt={product.name} />
+      
       <span>{product.price} som</span>
+      </div>
+    
+      <p>{product.description}</p>
+
       <AddToCart product={product} />
+    
+
     </div>
   );
 }
