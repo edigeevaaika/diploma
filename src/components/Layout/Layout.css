@@ -19,7 +19,8 @@
 }
 .Layout main {
   flex: 80% 1 1;
-  background-color: azure;;
+  padding: 0 30px;
+  background-color: azure;
 }
 .Layout footer {
   flex: 100% 0 0;
