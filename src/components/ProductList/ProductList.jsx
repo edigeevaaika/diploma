@@ -13,7 +13,8 @@ export default function ProductList({ category }) {
   .filter(product => product.category === category.id)
   .map(product => (
     <div className="Product" key={product.id}>
-      <img src={product.picture} alt={product.name} />
+      <Link to={"/products/" + product.path}>
+      <img src={product.picture} alt={product.name} /></Link>
       <Link to={"/product/" + product.path}>
         {product.name}
       </Link>
