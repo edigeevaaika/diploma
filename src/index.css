@@ -31,7 +31,7 @@ body {
 }
 .News {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 .news2 {
   margin: 1rem;
