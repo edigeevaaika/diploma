@@ -3,9 +3,30 @@
 }
 body {
   margin: 0;
-  
+  font-family: "Archivo Narrow", sans-serif;
+
 }
 .About {
   border-bottom: 50px;
   margin: 0;
+}
+
+.Product{
+  margin-bottom: 30px;
+}
+
+.CartItem{
+  width: 33.3%;
+  margin: 0 0 20px;
+  padding: 0 10px;
+}
+.Card{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Card > *{
+  margin-bottom: 10px;
+  display: block;
 }
