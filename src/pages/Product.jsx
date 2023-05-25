@@ -24,7 +24,7 @@ export default function Product() {
       </div>
     
       <p>{product.description}</p>
-
+      <p>{product.temp}</p>
       <AddToCart product={product} />
     
 
