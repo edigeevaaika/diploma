@@ -1,3 +1,4 @@
+import newsImage from "../assets/news.jpg";
 export default function Home() {
   return (
     <div className="Home">
@@ -14,8 +15,33 @@ export default function Home() {
         partners, we always keep our word and care about quality.
       </p>
       <div className="News">
-        <h1>News</h1>
-        
+        <div className="news2">
+          <h1>News</h1>
+          <img src={newsImage} alt="news image" />
+          <h2>Natural milk at a lower price</h2>
+          <p>
+            Volume, composition and fat content of milk are all preserved. That
+            means you get the same delicious and healthy product at a lower
+            price.
+          </p>
+        </div>
+        <div className="news3">
+        <iframe
+            width="360"
+            height="270"
+            src="https://www.youtube.com/embed/6QOaqCaKdAA"
+            title='"Белая Река" - мы приносим радость в каждую семью, производя полезные натуральные продукты!'
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <h2>Natural dairy products</h2>
+          <p>
+            “Belaya Reka” – we bring joy and health to every family, producing
+            delicious, healthy and natural dairy products.
+          </p>
+
+        </div>
       </div>
     </div>
   );
