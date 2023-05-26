@@ -12,8 +12,9 @@ export default function Delivery() {
       </p>
       <div className="delivery-info">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-          odio possimus aliquid maiores officia veritatis! Amet quia non, r
+          Delivery of products to < br/>
+          The consumer receives our products
+          in less than a day from the date of release.
         </p>
       </div>
     </div>
