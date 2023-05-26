@@ -17,7 +17,7 @@ import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
 import Product from "./pages/Product";
 import ThankYou from "./pages/ThankYou";
-import AsideList from "./components/AsideList/AsideList";
+// import AsideList from "./components/AsideList/AsideList";
 
 export const AppContext = createContext({
   categories: [],
@@ -116,7 +116,7 @@ export default function App() {
 
             <Route path="/cart" element={<Cart />} />
             <Route path="/orders/:path" element={<orders/>} />
-            <Route path="/asideList" element={<AsideList/>} />
+            {/* <Route path="/asideList" element={<AsideList/>} /> */}
           </Routes>
         </Layout>
       </AppContext.Provider>
