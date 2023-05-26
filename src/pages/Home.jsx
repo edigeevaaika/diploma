@@ -26,8 +26,8 @@ export default function Home() {
           </p>
         </div>
         <div className="news3">
-        <iframe
-            width="360"
+          <iframe
+            width="350"
             height="270"
             src="https://www.youtube.com/embed/6QOaqCaKdAA"
             title='"Белая Река" - мы приносим радость в каждую семью, производя полезные натуральные продукты!'
@@ -40,7 +40,6 @@ export default function Home() {
             “Belaya Reka” – we bring joy and health to every family, producing
             delicious, healthy and natural dairy products.
           </p>
-
         </div>
       </div>
     </div>
