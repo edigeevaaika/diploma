@@ -7,8 +7,8 @@ import Auth from "../Auth/Auth";
 import Drawer from "../Drawer/Drawer";
 import NavToggle from "../NavToggle/NavToggle";
 import { useState } from "react";
-import video from "../../assets/video.mp4";
-import AsideList from "../AsideList/AsideList";
+// import video from "../../assets/video.mp4";
+// import AsideList from "../AsideList/AsideList";
 import Footer from "../Footer/Footer";
 
 export default function Layout(props) {
@@ -27,7 +27,7 @@ export default function Layout(props) {
         <CartLink />
         <Auth />
       </header>
-      <AsideList />
+      {/* <AsideList /> */}
       <aside>
       <CategoryList />
       </aside>
@@ -41,4 +41,5 @@ export default function Layout(props) {
       
     </div>
   );
+
 }
